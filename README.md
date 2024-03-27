@@ -1,1 +1,0 @@
-# GD-Art-of-Rally-Remake
