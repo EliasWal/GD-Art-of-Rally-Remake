@@ -1,371 +1,508 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1711583098521203, "dur": 248004, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1711583098521534, "dur": 15328, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1711583098536866, "dur": 218684, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1711583098755552, "dur": 13655, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1711583098770141, "dur": 8, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183769980602, "dur": 2135481, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183769980833, "dur": 6100, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183769986934, "dur": 32585, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183770019635, "dur": 1439144, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183771458782, "dur": 645164, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183772103948, "dur": 12133, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183772116820, "dur": 14, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1712183771256407, "dur": 181622, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771257614, "dur": 62929, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771416294, "dur": 5200, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771421497, "dur": 16521, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771422118, "dur": 15017, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771443578, "dur": 1157, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1712183771442010, "dur": 2746, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183772116980, "dur": 386, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1711583098565126, "dur":1407, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098566542, "dur":77, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1711583098566636, "dur":13, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1711583098566650, "dur":281, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1711583098566953, "dur":410, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098567363, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741554, "dur":254, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741808, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741823, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741827, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741839, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741841, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741850, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741852, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741855, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741857, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741862, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741863, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741867, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741869, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741872, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741874, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741878, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741880, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741883, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741885, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741890, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741891, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741895, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741896, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741900, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741913, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098741930, "dur":1426, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1711583098567236, "dur":137, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098567378, "dur":4441, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098571827, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1711583098571831, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098571978, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1711583098571980, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572137, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572212, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572300, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572416, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572550, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572599, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572667, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572706, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572758, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572796, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098572973, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573023, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573069, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573112, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573160, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573208, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573255, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573295, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573335, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573378, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573419, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573461, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098573499, "dur":97812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098671317, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711583098671383, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711583098672347, "dur":69217, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098567316, "dur":92, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098567409, "dur":4418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098571827, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1711583098571923, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098571983, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572074, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572217, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572308, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572427, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572480, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572523, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572569, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572612, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572656, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572698, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572739, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572778, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572817, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098572886, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098573008, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098573047, "dur":91402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711583098664450, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711583098664542, "dur":77026, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098567300, "dur":100, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098567401, "dur":4423, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098571828, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572026, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572080, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572136, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572176, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572218, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572259, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572345, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572391, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572442, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572508, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572571, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572619, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572744, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572780, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572819, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098572859, "dur":294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098573153, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098573199, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711583098573240, "dur":288, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098573529, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":3, "ts":1711583098573613, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098574536, "dur":4003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":3, "ts":1711583098578596, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1711583098578820, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098578903, "dur":4783, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1711583098583687, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098583763, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1711583098583971, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098583979, "dur":8333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1711583098592349, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/boot.config" }}
-,{ "pid":12345, "tid":3, "ts":1711583098592543, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711583098592594, "dur":148954, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098567485, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098567486, "dur":4355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098571842, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1711583098571954, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572002, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572062, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572100, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572183, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572232, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572285, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572335, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572386, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572483, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572631, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572708, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572751, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572789, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572834, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098572967, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573082, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573129, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573211, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573251, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573290, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573344, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573389, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573454, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573505, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573662, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1711583098573712, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098575429, "dur":11999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1711583098587478, "dur":457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1711583098587942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711583098587951, "dur":4690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1711583098592705, "dur":148846, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098567265, "dur":126, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098567392, "dur":4436, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098571829, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1711583098571971, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572205, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572258, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572304, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572344, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572386, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572428, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572512, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572589, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572633, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572680, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572718, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572757, "dur":203, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098572961, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573057, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573152, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573201, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573242, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573325, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573367, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573703, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573754, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":5, "ts":1711583098573799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098576115, "dur":12263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":5, "ts":1711583098588439, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/level0" }}
-,{ "pid":12345, "tid":5, "ts":1711583098588488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098588491, "dur":3626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/level0" }}
-,{ "pid":12345, "tid":5, "ts":1711583098592154, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1711583098592220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711583098592223, "dur":1356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1711583098593617, "dur":147932, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098567407, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098567407, "dur":4416, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098571828, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1711583098571922, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098571975, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572024, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572138, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572222, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572355, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572415, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572479, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572540, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572588, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572647, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572691, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572733, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572773, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572814, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572853, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098572963, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098573016, "dur":102457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711583098675474, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711583098675535, "dur":66040, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098567349, "dur":68, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098567417, "dur":4404, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098571828, "dur":196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572024, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572070, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572120, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572160, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572223, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572272, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572329, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572413, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572470, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572531, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572596, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572656, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572706, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572751, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572796, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572835, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098572968, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573031, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573158, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573204, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573247, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573290, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573343, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573383, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573433, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573482, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573528, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573607, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":7, "ts":1711583098573656, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098575057, "dur":5851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":7, "ts":1711583098580959, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1711583098581012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098581019, "dur":7355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1711583098588421, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/level0.resS" }}
-,{ "pid":12345, "tid":7, "ts":1711583098588498, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098588501, "dur":3329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/level0.resS" }}
-,{ "pid":12345, "tid":7, "ts":1711583098591876, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1711583098591926, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711583098591931, "dur":1667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":7, "ts":1711583098593637, "dur":147915, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098567392, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098567393, "dur":4432, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098571828, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1711583098571948, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572032, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572096, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572148, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572226, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572350, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572397, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572443, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572485, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572545, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572611, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572698, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572743, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572786, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572827, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572869, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098572969, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098573011, "dur":96202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711583098669214, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711583098669305, "dur":72279, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098567442, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098567442, "dur":4398, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098571840, "dur":199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572039, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572129, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2.exe" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572257, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572311, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572355, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572460, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572512, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572568, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572661, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572710, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572771, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572811, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572852, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098572957, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098573010, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098573052, "dur":168362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":9, "ts":1711583098741415, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1711583098741505, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":9, "ts":1711583098741506, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098567475, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098567475, "dur":4354, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098571830, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":10, "ts":1711583098571946, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572001, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572048, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572089, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572171, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572232, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572380, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572489, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572654, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572713, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572839, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098572968, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573021, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573061, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573102, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573167, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573208, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573249, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573312, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573494, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573555, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573600, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1711583098573650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1711583098574650, "dur":62209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"builds/AOR2_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":10, "ts":1711583098636896, "dur":104663, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098567520, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098567520, "dur":4322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098571843, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1711583098571983, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572049, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572095, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572136, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572272, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572343, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572385, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572451, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572494, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572531, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572570, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572667, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572874, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098572989, "dur":50872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":11, "ts":1711583098623862, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1711583098623942, "dur":117620, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098567540, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098567540, "dur":4314, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098571854, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1711583098571946, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098572018, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":12, "ts":1711583098572358, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098572435, "dur":120282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles builds/AOR2_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":12, "ts":1711583098692717, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1711583098692799, "dur":48756, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711583098744773, "dur":1259, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1711583098770274, "dur": 537, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1711583098770128, "dur": 707, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1712183771495394, "dur":1189, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183771496593, "dur":42, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1712183771496646, "dur":13, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1712183771496660, "dur":303, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1712183771496981, "dur":518, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183771497499, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088342, "dur":123, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088466, "dur":106, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088572, "dur":105, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088677, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088691, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088694, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088701, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088703, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088708, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088710, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088715, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088717, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088721, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088722, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088732, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088734, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088739, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088741, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088745, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088747, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088752, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088753, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088757, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088759, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088764, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088787, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772088810, "dur":2540, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1712183771497520, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771497520, "dur":4508, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771502029, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1712183771502164, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771509118, "dur":1482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1712183771510641, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771510694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771510967, "dur":2515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771513541, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1712183771513599, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771514131, "dur":24813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1712183771539036, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771539099, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771539110, "dur":4329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771543529, "dur":324708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771868246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1712183771868260, "dur":6189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1712183771874492, "dur":213879, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771497394, "dur":143, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771497537, "dur":4485, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771502028, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1712183771502140, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771503635, "dur":2442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1712183771506113, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1712183771506145, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771506888, "dur":1071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1712183771507995, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1712183771508048, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771508056, "dur":1322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1712183771509427, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1712183771509495, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771509503, "dur":1483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1712183771511037, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771511094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771511140, "dur":28179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771539492, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771539563, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771539574, "dur":4739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771544381, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771544440, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771544449, "dur":7058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771552376, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771552531, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771552568, "dur":11387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771564218, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771564352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771564361, "dur":6275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771570729, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771570828, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771570853, "dur":8762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771579662, "dur":173733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771753404, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1712183771753420, "dur":11819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1712183771765299, "dur":323061, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771497432, "dur":120, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771497553, "dur":4509, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771502062, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1712183771502173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771515838, "dur":9477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1712183771525433, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771525525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771525542, "dur":4267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771529906, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771530013, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771530035, "dur":7908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771538046, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771538123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771538136, "dur":4633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771542832, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771542907, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771542914, "dur":9236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771552218, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771552282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771552291, "dur":6807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771559437, "dur":476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771559917, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771559945, "dur":6343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771566357, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771566423, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771566430, "dur":5597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771572096, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771572199, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771572211, "dur":5715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771578027, "dur":139092, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771717130, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1712183771717153, "dur":4810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1712183771722064, "dur":366282, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771497420, "dur":124, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771497544, "dur":4496, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771502041, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1712183771502194, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771533430, "dur":8147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1712183771541642, "dur":386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771542154, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771542164, "dur":5491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771547730, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771547801, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771547810, "dur":6389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771554280, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771554365, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771554374, "dur":7184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771561638, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771561739, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771561751, "dur":4374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771566189, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771566256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771566266, "dur":4954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771571283, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771571360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771571370, "dur":2872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771574316, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771574392, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771574402, "dur":8925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771583374, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771583415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771583422, "dur":11709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771595217, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771595321, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771595338, "dur":11788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771607172, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771607223, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771607230, "dur":5964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771613287, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771613379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771613389, "dur":2403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771615831, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771615890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771615899, "dur":30388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1712183771646361, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1712183771646433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771646443, "dur":33574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1712183771680069, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1712183771680207, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1712183771680213, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1712183771681522, "dur":406839, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771497339, "dur":183, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771497522, "dur":4504, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771502029, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1712183771502179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771516202, "dur":3783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1712183771520075, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771520173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771520186, "dur":7835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771528228, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771528335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771528481, "dur":10968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771539545, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771539642, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771539651, "dur":6098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771545834, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771545919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771545933, "dur":5791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771551782, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771551852, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771551861, "dur":4663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771556616, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771556713, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771556721, "dur":6300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771563094, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771563171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771563193, "dur":4970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771568263, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771568334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771568393, "dur":4515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771572973, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771573071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771573079, "dur":4889, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771578030, "dur":199795, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771782685, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1712183771782711, "dur":4390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1712183771787155, "dur":301212, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771497383, "dur":147, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771497530, "dur":4518, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771502052, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1712183771502162, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771508927, "dur":1208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1712183771510206, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1712183771510256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771510264, "dur":1936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1712183771512247, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2.exe" }}
+,{ "pid":12345, "tid":6, "ts":1712183771512294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771512299, "dur":1233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2.exe" }}
+,{ "pid":12345, "tid":6, "ts":1712183771513577, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771513633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771514246, "dur":883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771515156, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771515185, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771515288, "dur":4389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771519771, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771519871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771519889, "dur":7474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771527479, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771527605, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771527628, "dur":2336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771530058, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771530215, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771530231, "dur":9889, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771540189, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771540271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771540280, "dur":6151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771546506, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771546577, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771546589, "dur":4978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771551694, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771551760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771551770, "dur":6596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771558450, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771558587, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771558595, "dur":6913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771565712, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771565781, "dur":8, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771565800, "dur":7637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771573490, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771573592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771573604, "dur":9609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771583756, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771583825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771583831, "dur":5534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771589460, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771589557, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771589568, "dur":16602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771606454, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771606537, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771606544, "dur":9403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771616007, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771616079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771616086, "dur":37067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1712183771653285, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1712183771653385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771653408, "dur":5496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1712183771658980, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1712183771659209, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771659225, "dur":7146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1712183771666520, "dur":4897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1712183771671425, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771671435, "dur":8160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1712183771679634, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1712183771679675, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1712183771679682, "dur":1492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1712183771681218, "dur":407118, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771497294, "dur":215, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771497515, "dur":4505, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771502028, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1712183771502031, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771502216, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1712183771502220, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771605266, "dur":63441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/app.info" }}
+,{ "pid":12345, "tid":7, "ts":1712183771668709, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1712183771668816, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771668836, "dur":4203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1712183771673083, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1712183771673127, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771673136, "dur":2477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1712183771675659, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1712183771675717, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771675729, "dur":1575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1712183771677361, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1712183771677415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771677427, "dur":1687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1712183771679168, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1712183771679218, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1712183771679230, "dur":1330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1712183771680602, "dur":407735, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771497460, "dur":101, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771497561, "dur":4491, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771502052, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1712183771502165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771509701, "dur":1361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1712183771511132, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771511181, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771511186, "dur":64051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771575429, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771575538, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771575601, "dur":30410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771606058, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771606111, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771606118, "dur":52745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1712183771658958, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1712183771659058, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771659081, "dur":9398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1712183771668547, "dur":2331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1712183771670889, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1712183771670937, "dur":9360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1712183771680340, "dur":408008, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771497510, "dur":3, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771497513, "dur":4510, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771502039, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1712183771502209, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771537344, "dur":3500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1712183771540918, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771541000, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771541012, "dur":6942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771548002, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771548091, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771548104, "dur":4216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771552401, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771552495, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771552516, "dur":11378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771563977, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771564062, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771564074, "dur":9232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771573356, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771573435, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771573442, "dur":8119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771581618, "dur":320987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771902611, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1712183771902627, "dur":1230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1712183771903899, "dur":184443, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771497566, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771497566, "dur":4469, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771502036, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1712183771502141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771503722, "dur":2363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1712183771506134, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1712183771506173, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771506425, "dur":1467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1712183771507922, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1712183771507958, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771508016, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1712183771509414, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1712183771509489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771509497, "dur":1789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1712183771511332, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":10, "ts":1712183771511386, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771511392, "dur":10288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":10, "ts":1712183771521746, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771521810, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771521824, "dur":8349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771530253, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771530447, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771530470, "dur":8239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771538829, "dur":416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771539318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771539327, "dur":4129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771543548, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771543614, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771543627, "dur":5916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771550517, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771550798, "dur":115, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771550932, "dur":3521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771554606, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771554782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771554793, "dur":6669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771561564, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771561727, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771561744, "dur":5939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771567753, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771567840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771567858, "dur":4219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771572136, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771572236, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771572245, "dur":8098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771580394, "dur":159511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771739926, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1712183771739941, "dur":25261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":10, "ts":1712183771765258, "dur":323104, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771497606, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771497606, "dur":4418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771502028, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1712183771502181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771532632, "dur":5318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1712183771538058, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771538142, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771538150, "dur":6819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771545041, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771545135, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771545148, "dur":6453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771551665, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771551733, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771551742, "dur":3710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771555519, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771555593, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771555652, "dur":8379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771564097, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771564163, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771564176, "dur":8729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771572974, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771573050, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771573084, "dur":7214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771580347, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771580391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771580403, "dur":3044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771583503, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771583566, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771583572, "dur":5162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771588860, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771588983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771589002, "dur":3119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771592211, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771592283, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771592305, "dur":9305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771601662, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771601710, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771601723, "dur":5870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771607631, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771607683, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771607690, "dur":1988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771609769, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771609847, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771609858, "dur":5443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771615393, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771615475, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771615483, "dur":1219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771616737, "dur":188923, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771805668, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1712183771805683, "dur":10333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1712183771816081, "dur":272288, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771497636, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771497637, "dur":4400, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771502038, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1712183771502206, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771538884, "dur":3033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1712183771542174, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771542259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771542267, "dur":4658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771546998, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771547080, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771547090, "dur":4700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771551853, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771551928, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771551936, "dur":6319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771558333, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771558403, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771558413, "dur":5127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771563599, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771563677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771563686, "dur":8115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771571858, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771571924, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771571937, "dur":11317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771583312, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771583389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771583400, "dur":5616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771589087, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771589153, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771589164, "dur":6961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771596165, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771596206, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771596215, "dur":11396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771607667, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771607751, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771607758, "dur":9512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1712183771617315, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":12, "ts":1712183771617361, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771617467, "dur":1859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":12, "ts":1712183771619394, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1712183771619478, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1712183771619490, "dur":424752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Elias/Desktop/Facultate/An III Sem II/GD/GD-Art-of-Rally-Remake/AOR2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1712183772088282, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":12, "ts":1712183772088285, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1712183772093103, "dur":1915, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1712183772117445, "dur": 597, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1712183772116798, "dur": 1261, "ph": "X", "name": "Write chrome-trace events", "args": {} },

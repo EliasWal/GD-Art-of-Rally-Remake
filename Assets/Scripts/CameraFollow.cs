@@ -20,7 +20,8 @@ public class CameraFollow : MonoBehaviour
     void FollowTarget()
     {
         // Calculate the target position and rotation
-        targetPosition = carTarget.TransformPoint(offsetPosition);
+        Vector3 predictedTargetPosition = carTarget.position + carTarget.forward * carTarget.GetComponent<Rigidbody>().velocity.magnitude * Time.deltaTime;
+        targetPosition = predictedTargetPosition + carTarget.TransformDirection(offsetPosition);
         targetRotation = Quaternion.LookRotation(carTarget.forward + offsetRotation, carTarget.up);
 
         // Interpolate the camera's position and rotation towards the target

@@ -1,25 +1,18 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
     private float horizontalInput, verticalInput;
-    private float currentSteerAngle, currentBreakForce;
     private bool isBreaking, isHandBrake;
 
-    // Settings
     [SerializeField] private float motorForce = 1500f;
     [SerializeField] private float breakForce = 3000f;
-    [SerializeField] private float handBrakeForce = 8000f; // New
+    [SerializeField] private float handBrakeForce = 8000f;
     [SerializeField] private float maxSteerAngle = 30f;
 
-    // Wheel Colliders
     [SerializeField] private WheelCollider frontLeftWheelCollider, frontRightWheelCollider;
     [SerializeField] private WheelCollider rearLeftWheelCollider, rearRightWheelCollider;
 
-    // Wheels
     [SerializeField] private Transform frontLeftWheelTransform, frontRightWheelTransform;
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
 
@@ -33,29 +26,17 @@ public class CarController : MonoBehaviour
 
     private void GetInput()
     {
-        // Steering Input
         horizontalInput = Input.GetAxis("Horizontal");
-
-        // Acceleration Input
         verticalInput = Input.GetAxis("Vertical");
-
-        // Brake Input
         isBreaking = Input.GetKey(KeyCode.Space);
-
-        // Handbrake Input
-        isHandBrake = Input.GetKey(KeyCode.LeftShift); // Assuming Left Shift as handbrake key
+        isHandBrake = Input.GetKey(KeyCode.LeftShift);
     }
 
     private void HandleMotor()
     {
-        frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
-        frontRightWheelCollider.motorTorque = verticalInput * motorForce;
-        currentBreakForce = isBreaking ? breakForce : 0f;
-        ApplyBreaking();
-    }
+        float motorTorque = verticalInput * motorForce;
+        float brakeTorque = isBreaking ? breakForce : 0f;
 
-    private void ApplyBreaking()
-    {
         if (isHandBrake)
         {
             rearLeftWheelCollider.brakeTorque = handBrakeForce;
@@ -63,28 +44,30 @@ public class CarController : MonoBehaviour
         }
         else
         {
-            rearLeftWheelCollider.brakeTorque = currentBreakForce;
-            rearRightWheelCollider.brakeTorque = currentBreakForce;
+            rearLeftWheelCollider.brakeTorque = brakeTorque;
+            rearRightWheelCollider.brakeTorque = brakeTorque;
         }
 
-        // Apply regular brakes to front wheels
-        frontLeftWheelCollider.brakeTorque = currentBreakForce / 2;
-        frontRightWheelCollider.brakeTorque = currentBreakForce / 2;
+        frontLeftWheelCollider.brakeTorque = brakeTorque ;
+        frontRightWheelCollider.brakeTorque = brakeTorque;
+
+        frontLeftWheelCollider.motorTorque = motorTorque;
+        frontRightWheelCollider.motorTorque = motorTorque;
     }
 
     private void HandleSteering()
     {
-        currentSteerAngle = maxSteerAngle * horizontalInput;
-        frontLeftWheelCollider.steerAngle = currentSteerAngle;
-        frontRightWheelCollider.steerAngle = currentSteerAngle;
+        float steerAngle = maxSteerAngle * horizontalInput;
+        frontLeftWheelCollider.steerAngle = steerAngle;
+        frontRightWheelCollider.steerAngle = steerAngle;
     }
 
     private void UpdateWheels()
     {
         UpdateSingleWheel(frontLeftWheelCollider, frontLeftWheelTransform);
         UpdateSingleWheel(frontRightWheelCollider, frontRightWheelTransform);
-        UpdateSingleWheel(rearRightWheelCollider, rearRightWheelTransform);
         UpdateSingleWheel(rearLeftWheelCollider, rearLeftWheelTransform);
+        UpdateSingleWheel(rearRightWheelCollider, rearRightWheelTransform);
     }
 
     private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
