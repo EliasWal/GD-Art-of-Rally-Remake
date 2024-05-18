@@ -1,14 +1,17 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
     private float horizontalInput, verticalInput;
     private bool isBreaking, isHandBrake;
 
-    [SerializeField] private float motorForce = 1500f;
+    [SerializeField] private float motorForce = 1000f;
     [SerializeField] private float breakForce = 3000f;
     [SerializeField] private float handBrakeForce = 8000f;
-    [SerializeField] private float maxSteerAngle = 30f;
+    [SerializeField] private float maxSteerAngle = 20f;
+
+    [SerializeField] private float steeringSensitivity = 0.1f;  
+    [SerializeField] private float maxAngularVelocity = 5f;
 
     [SerializeField] private WheelCollider frontLeftWheelCollider, frontRightWheelCollider;
     [SerializeField] private WheelCollider rearLeftWheelCollider, rearRightWheelCollider;
@@ -48,7 +51,7 @@ public class CarController : MonoBehaviour
             rearRightWheelCollider.brakeTorque = brakeTorque;
         }
 
-        frontLeftWheelCollider.brakeTorque = brakeTorque ;
+        frontLeftWheelCollider.brakeTorque = brakeTorque;
         frontRightWheelCollider.brakeTorque = brakeTorque;
 
         frontLeftWheelCollider.motorTorque = motorTorque;
@@ -57,9 +60,15 @@ public class CarController : MonoBehaviour
 
     private void HandleSteering()
     {
-        float steerAngle = maxSteerAngle * horizontalInput;
-        frontLeftWheelCollider.steerAngle = steerAngle;
-        frontRightWheelCollider.steerAngle = steerAngle;
+        // Calcularea unghiului de virare în funcție de inputul utilizatorului
+        float targetSteerAngle = maxSteerAngle * horizontalInput;
+
+        // Interpolarea către unghiul de virare dorit pentru a evita schimbările bruște
+        float smoothSteerAngle = Mathf.Lerp(frontLeftWheelCollider.steerAngle, targetSteerAngle, steeringSensitivity);
+
+        // Aplicarea unghiului de virare către roți
+        frontLeftWheelCollider.steerAngle = smoothSteerAngle;
+        frontRightWheelCollider.steerAngle = smoothSteerAngle;
     }
 
     private void UpdateWheels()

@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
     private Vector3 targetPosition;
     private Quaternion targetRotation;
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         FollowTarget();
     }
